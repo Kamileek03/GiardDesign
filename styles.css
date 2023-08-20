@@ -1,0 +1,567 @@
+body{
+    background-color: white ;
+    color: #252424;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    left: 0;
+    margin:0 ;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+.logo{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.logo:hover{
+    font-size: 2em;
+    transition: 2s;
+}
+strong{
+    color: green;
+}
+
+.grupa{
+  display: flex;
+  align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    right: 100px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: green;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+header ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    color: green;
+}
+/* Pierwszy blok */
+.start{
+    position: absolute;
+    width: auto;
+    height: 600px;
+    background-color: #DCC1AB;
+    justify-content: space-between;
+    left: 0;
+}
+h1{
+    font-size: 50px;
+}
+.Text{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 40%;
+    overflow-wrap: break-word;
+    float: left;
+    text-align: left;
+}
+.img1{
+    float: right;
+    width: 40%;
+    height: 600px;
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5{
+    background: none;
+    border-radius: 999px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 18px;
+    width: fit-content;
+    border: 0;
+}
+.btn1{
+    background-color: green;
+    color: white;
+    border: green 1px solid;
+    margin: 20px;
+}
+.btn1:hover{
+    background:none;
+    color: green;
+    border: green 1px solid;
+    margin: 20px;
+    transition: 0.5s;
+}
+.btn2{
+    background: none;
+    color: green;
+    border: green 1px solid;
+}
+.btn2:hover{
+    background-color: green;
+    color: white;
+    border: green 1px solid;
+    transition: 0.5s;
+}
+p{
+    overflow-wrap: break-word;
+}
+/* Drugi blok */
+#oferta{
+    margin-top: 600px;
+    height: 1200px;
+    width: auto;
+    color: black;
+    background-color: #F5F0EC;
+    float: left;
+    left:0;
+}
+#oferta  .blok1h{
+    height: 55px;
+    width: auto;
+    margin-left: 100px;
+}
+.wstep  .blok1p{
+    height: 72px;
+    width: 709px;
+    overflow-wrap: break-word;
+    margin: 50px;
+    margin-left: 100px;
+}
+/* Karty */
+.cards
+{
+    padding-left: 100px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    display: inline-flex;
+    gap: 100px;
+}
+.card
+{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 28%;
+    padding: 50px;
+    font-size: 14px;
+    float: left;
+    margin-bottom: 100px;
+}
+.card:hover{
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+.card a{
+    cursor: pointer;
+    text-decoration: none;
+}
+/* Trzeci blok */
+.ofirmie{
+    width: auto;
+    color: black;
+    background-color: #1B5B31;
+    float: right;
+    text-align: left;
+}
+.Text1{
+    margin-top: 80px;
+    width: 40%;
+    margin-right: 100px;
+    overflow-wrap: break-word;
+    float: right;
+    text-align: left;
+    color: white;
+}
+.img2{
+    float: left;
+    width: 50%;
+}
+.btn3{
+    background: none;
+    color: white;
+    border: white 1px solid;
+}
+.btn3:hover{
+    background-color: white;
+    color: #1B5B31;
+    border: white 1px solid;
+    transition: 0.5s;
+}
+#realizacje{
+    margin-top: 1600px;
+    float: left;
+}
+/* Czwarty blok */
+.galeria{
+    background-color: #DCC1AB;
+    width: auto;
+}
+.galeria .zdjecia{
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.galeria .zdjecia .png{
+    overflow: hidden;
+    cursor: pointer;
+}
+.galeria .zdjecia .png img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.galeria .zdjecia .png:hover{
+    transform: scale(1.01);
+    transition: 1s;
+    
+}
+.tytul{
+    padding: 1900px 0 0 100px;
+}
+.zdjecia{
+    padding: 100px;
+    float: left;
+    height: max-content;
+    width: 1135px;
+    columns: 3;
+    column-gap: 10px;
+
+}
+.zdjecia .png{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    z-index: 0;
+}
+.zdjecia .png img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+.zdjecia .btn4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.btn4{
+    background:none;
+    color: black;
+    border: black 1px solid;
+    margin-left: 50%;
+    margin-bottom: 50px;
+    
+}
+.btn4:hover{
+    background-color: green;
+    color: white;
+    border: white 1px solid;
+    transition: 0.5s;
+    align-items: center;
+}
+/*Piąty blok */
+.instablock{
+    background-color: white;
+    display: flex;
+    height: 400px;
+    width: auto;
+}
+
+.left{
+    display: flex;
+    color: white;
+    margin: 20px 50px 50px 50px;
+    flex: 3;
+    width: auto;
+    background: #1B5B31;
+    align-items: center;
+    padding: 100px 90px;
+    float: left;
+}
+.right{
+    display: flex;
+    flex: 1;
+    color: white;
+    margin: 50px;
+    padding-left: 300px;
+    align-items: center;
+    float: right;
+}
+.btn5{
+    background-color: white;
+    color: #1B5B31;
+    border: white 1px solid;
+    margin: 20px;
+}
+.btn5:hover{
+    background:none;
+    color: white;
+    border: white 1px solid;
+    margin: 20px;
+    transition: 0.5s;
+}
+/*szósty blok */
+#end{
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 50px 120px 50px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.btn1{
+    background-color: green;
+    color: white;
+    border: green 1px solid;
+    margin: 20px;
+}.btn1:hover{
+    background:none;
+    color: green;
+    border: green 1px solid;
+    margin: 20px;
+    transition: 0.5s;
+}
+.gora{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin: 20px;
+    border-bottom: white 1px solid;
+}
+.srodek{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px;
+    gap: 50px;
+}
+.dol{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin: 20px;
+}
+.space{
+    color: black;
+}
+.links{
+    cursor: pointer;
+}
+.links a:hover{
+    color: green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* OFERTA navbar */
+.ofertabtn {
+    background:none;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    top: 30px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    background:green;
+    min-width: 10px;
+    overflow: auto;
+    z-index: 1;
+}
+.dropdown-content  a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content  a:hover {
+    background-color: white;
+    color: green;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.show {display: block;}
+    
+/* Wyszukiwarka navbar */
+header .Wyszukiwarka{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    z-index: 10;
+}
+.Wyszukiwarka{
+    cursor: pointer;
+}
+.searchbox{
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s ease-in-out;
+}
+.searchbox.active{
+    right: 0;
+    width: 1000px;
+}
+.searchbox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: green;
+    font-size: 1.25em;
+    background: #ffffff;
+    border-bottom: 1px solid green;
+}
+.searchbtn{
+    position: relative;
+    left: 30px;
+    top: 2.5px;
+    transition: 0.5s ease-in-out;
+}
+.searchbtn.active{
+    left: 0;
+}
+.closebtn{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    scale: 0;
+}
+.closebtn.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    scale: 1;
+    color: red;
+}
+.menu{
+    position: relative;
+    display: none;
+}
+/* popup */
+.galeria .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000de;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.galeria .popup span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.galeria .popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 5px white solid;
+    width: 750px;
+    object-fit: cover;
+}
+/* animcaje */
+@media (max-width:768px){
+    .galeria .popup img{
+        width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .searchbtn{
+      left: 0;
+    }
+    .menu{
+      position: absolute;
+      display: block;
+      font-size: 2em;
+      cursor: pointer;
+      transform: translateX(30px);
+      z-index: 10;
+    }
+    header .navbar{
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      left: 100%;
+    }
+    header.open .navbar{
+      top: 80px;
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      width: 100%;
+      height: calc(100vh -80px);
+      padding: 40px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    header.open .navbar li a{
+      font-size: 1.25em;
+    }
+    .hide{
+      display: none;
+    }
+}

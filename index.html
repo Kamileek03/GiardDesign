@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giarddesign</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6de1166282.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><strong>giard</strong>design</a>
+        <div class="grupa">
+            <ul class="navbar">
+                <li><a class="ofertabtn" onclick="oferta()">oferta<i class="fa-solid fa-chevron-down fa-xs"></i></a></li>
+                <div id="lista" class="dropdown-content">
+                    <a>Ogrody prywatne i rezydencjonalne <i class="fa-solid fa-house"></i></a>
+                    <a>Ogrody ekonomiczne <i class="fa-solid fa-leaf"></i></a>
+                    <a>Ogrody dla dzieci <i class="fa-solid fa-child"></i></a>
+                    <a>Restauracje i hotele <i class="fa-solid fa-utensils"></i></a>
+                    <a>Konserwacja i utrzymanie ogrodów <i class="fa-solid fa-worm"></i></a>
+                </div>
+                <li><a href="#oferta">o firmie</a></li>
+                <li><a href="#realizacje">realizacje</a></li>
+                <li><a href="#end">kontakt</a></li>
+                <div class="Wyszukiwarka">
+                    <span>
+                        <i onclick="searchbar()" class="fa-solid fa-magnifying-glass searchbtn"></i>
+                        <i class="fa-solid fa-x closebtn"></i>
+                    </span>
+                </div>
+            </ul>
+            <i class="fa-solid fa-bars menu"></i>
+            <div class="searchbox">
+                <input type="text" placeholder="Szukaj...">
+              </div>
+        </div>
+    </header>
+    <section>
+            <div class="start">
+                <div class="Text">
+                    <h1>Nowoczesna aranżacja<br> twojego ogrodu</h1>
+                    <p>
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.
+                    </p>
+                        <div>
+                            <button class="btn1">Skontaktuj sie z nami</button>
+                            <button class="btn2">Zobacz nasze realizacje <i class="fa-solid fa-arrow-right fa-rotate-90 fa-sm"></i></button>
+                        </div>
+                </div>
+                    <img class="img1" src="img1.jpeg">
+                    <!--Nigdy nie robiłem slajderu, nie wiem jak go zrobić-->
+            </div>
+            <div id="oferta">
+                <div class="wstep">
+                <h1 class="blok1h"> Działamy <i>kompleksowo</i></h1>
+                <p class="blok1p">
+                    Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
+                </p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-pencil fa-rotate-270 fa-2xl"></i>
+                        <h3>Projekty</h3><br>
+                        Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.<br><br>
+                        <a >Dowiedz się więcej <i class="fa-solid fa-arrow-right fa-sm"></i> </a>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-eye fa-2xl"></i>
+                        <h3>Wizualizacje</h3><br>
+                        Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.<br><br>
+                        <a>Dowiedz się więcej <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-star fa-2xl"></i>
+                        <h3>realizacje</h3><br>
+                        Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.<br> <br>
+                        <a>Dowiedz się więcej <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+                    </div>
+                </div>
+                <div class="ofirmie">
+                    <div class="Text1">
+                        <h1>Tworzymy z <i>pasją</i></h1>
+                        <p>
+                            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+                        </p>
+                            <div>
+                                <button class="btn3">Poznaj nas bliżej <i class="fa-solid fa-arrow-right fa-sm"></i></button>
+                            </div>
+                    </div>
+                        <img class="img2" src="img2.jpeg">
+                    </div>
+                </div>
+            </div>
+            <div id="realizacje"></div>
+                <div class="galeria"> <!-- Pierwszy raz robiłem popup'a, miałem z nim lekkie problemy.-->
+                    <h1 class="tytul">Nasze <i>projekty</i></h1>
+                    <div class="zdjecia">
+                        <div class="png"><img src="1png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="2png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="3png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="4png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="5png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="6png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="7png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="8png.png" alt="" onclick="popup()"></div>
+                        <div class="png"><img src="9png.png" alt="" onclick="popup()"></div>
+                    </div>
+                    <div class="popup">
+                        <span><i class="fa-solid fa-x fa-2xs"></i></span>
+                        <img src="1png.png">
+                    </div>
+                    <button class="btn4"> Rozwiń <i class="fa-solid fa-arrow-right fa-rotate-90 fa-sm"></i></button>
+                </div>
+            <!-- Pierwszy raz miałem zrobić żeby strona się rozwijała po kliknięciu, całkowicie nie wiedziałęm jak to zrobić, tak samo z tym gradientem-->
+            <div class="instablock">
+                <div class="left">
+                    <h2>Zostańmy w kontakcie! <br> Znajdziesz nas na <i>Instagramie</i>.</h2>
+                    <div class="right">
+                        <p>śledź nasze najnowsze realizacje!</p>
+                        <button class="btn5">Instagram</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div id="end">
+            <div class="gora">
+              <div>
+                <strong>giard</strong>design
+              </div>
+              <div>
+                  Daj znać, co możemy dla Ciebie zrobić!
+                  <button class="btn1">
+                    Skontaktuj się z nami
+                  </button>
+                </div>
+            </div>
+            <div class="srodek">
+              <div class="links">
+                <a>Kontakt <i class="fa-solid fa-phone"> </a></i><a class="space">-----</a>
+                <a>Instragram <i class="fa-brands fa-instagram"></i></a><a class="space">-----</a>
+                <a>Facebook <i class="fa-brands fa-facebook"></i></a><a class="space">-----</a>
+                <a>Linkedin <i class="fa-brands fa-linkedin"></i></a></i>
+              </div>
+              000-000-000 giarddesign@kontakt.pl
+            </div>
+            <div class="dol">
+              <a>Prawa zastrzeżone © 2022 </a>
+              <div>
+                made by <img src="adrespect_logo.svg">
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
